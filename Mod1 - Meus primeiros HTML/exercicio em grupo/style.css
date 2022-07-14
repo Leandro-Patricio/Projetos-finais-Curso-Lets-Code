@@ -1,0 +1,27 @@
+body {
+    font-family: calibri;
+    background-color: rgb(84, 144, 234);
+}
+
+.img_carousel {
+    height: 400px;
+}
+
+.img_logo {
+    height: 90px;
+}
+
+.text_black {
+    color: black;
+}
+
+.button_back {
+    position: fixed; 
+    left: 10px;
+    top: 410px;
+}
+
+form {
+    width: 25%; 
+    margin: auto;
+}

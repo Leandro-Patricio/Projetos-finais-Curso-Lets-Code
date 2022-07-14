@@ -1,0 +1,222 @@
+/*CSS EXTERNO*/
+    html{
+       scroll-behavior: smooth;
+    }
+  footer{
+    background-color: rgb(84, 144, 234);
+    position: relative;
+    height: 140px;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 30px;
+    border-radius: 50%;
+  }
+
+  /* .fa:hover{
+    opacity: 1;
+  } */
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #ff6363;
+    color: white;
+  }
+
+  .email {
+    background: black;
+    color: white;
+  }
+
+  header{
+    background-image: url(http://s2.glbimg.com/uZ4LaXjGo6qhJNczfp64cdvew5M=/e.glbimg.com/og/ed/f/original/2016/06/21/pyramidheader_1024.png);
+    background-repeat: no-repeat;
+    /* background-size: 100% 60%; */
+    background-size: cover;
+    /* background: size 100%; */
+    padding-top: 500px ;
+    /* http://s2.glbimg.com/uZ4LaXjGo6qhJNczfp64cdvew5M=/e.glbimg.com/og/ed/f/original/2016/06/21/pyramidheader_1024.png */
+  /* https://www.toureiffel.paris/sites/default/files/styles/1200x675/public/actualite/image_principale/IMG_0815.jpg?itok=WMTiIJDZ */
+  /* https://viagemeturismo.abril.com.br/wp-content/uploads/2017/03/new-years-eve-00-full.jpg?quality=70&strip=info&w=680&h=360&crop=1 */
+/* https://m.media-amazon.com/images/I/71GMWdXWARL._AC_SL1200_.jpg */
+}
+
+  nav.navbar{
+    background-color: rgb(84, 144, 234);
+  }
+
+  .nav-link {
+    color: white;
+    font-family: calibri;
+  }
+
+
+
+  .col-title{
+    font-size: 30px;
+    font-family: calibri;
+  }
+  
+  .row{
+    padding-top: 10px;
+  }
+
+  .col, .col-3, .col-2, .col4{
+    font-size: 20px;
+    font-family: calibri;
+  }
+  div.container{
+    width: 80%;
+    text-align: center;
+    background-color: rgb(99, 99, 99, 0.8);
+    border-radius: 10%;
+    position:relative;
+    bottom: 20px;
+    color: white;
+  }
+  div.form-check{
+    /* margin-left:35px; */
+    font-size: 20px;
+  }
+
+  td.datas{
+    font-size: 20px;
+  }
+
+  input.form-control{
+    font-size: 16px;
+  }
+
+  button.btn{
+    position:relative; 
+    right: 40px; bottom: 1.8px;
+    border: none;
+    font-size: 10px;
+  }
+
+  div.backtop{
+    position: absolute; 
+    bottom: 35px; left: 60px; 
+  }
+
+  a.float-start{
+    text-decoration: none;
+  }
+
+  span.seta_cima{
+    color: red;
+    font-size: 30px;
+  }
+
+div.backtop_escrito{
+  color: white; 
+  font-size: 15px;
+}
+
+div.final{
+    color:white;
+    text-align:center;
+    font-family: calibri;
+  }
+
+  div.final_direita{
+  position: absolute; 
+  bottom: 15px; 
+  right: 10px; 
+  margin: 20px 20px; 
+  text-align: start;
+  color:white;
+  font-size: 12px;
+  font-family: calibri;
+}
+
+
+    
+.main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+       
+        
+    }
+h3{
+        text-align: center;
+        margin-top: 2%;
+        font-family: calibri;
+    }
+    
+hr{
+        border: 5px solid rgb(84, 144, 234) ;
+    }
+
+.card1{
+        width: 20rem;
+        
+        margin-top: 2%;
+        margin-left: 3%;
+        margin-bottom: 2%;
+    }
+.justify{
+        text-align: justify;
+    }
+
+.config{
+    padding: 1%;
+    background-color:rgb(84, 144, 234) ;
+    height: 2%;
+    color: white;
+    text-align: center;
+    font-family: calibri;
+    margin-top: 2%;
+    
+}
+
+.but{
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px;
+    font-family: calibri;
+}
+.card-title{
+  margin-top: 2%;
+  font-family: calibri;
+  color: rgb(84, 144, 234);
+  font-weight: bold;
+}
+
+.card-text{
+font-family: calibri;
+}
+
+.login{
+position: absolute;
+top: 20px; 
+right: 30px;
+}
+
+
+
+
+
+
+

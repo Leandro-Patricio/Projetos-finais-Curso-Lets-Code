@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Fly Viagens</title>
+    <!-- links bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- link para logos de empresas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid" style="font-family: calibri;">
+
+      <a class="navbar-brand" href="index.html"><img src="https://i.ibb.co/sRC6L5m/Apresenta-o1.png" 
+        alt="Logo Let's Fly" width="90px" id="topo"> <b> Let's Fly Viagens </b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#brasil" style="color:white">Viagens Nacionais</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+              Viagens internacionais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#américa">América</a></li>
+              <li><a class="dropdown-item" href="#europa">Europa</a></li>
+              <li><a class="dropdown-item" href="#africa">África</a></li>
+              <li><a class="dropdown-item" href="#asia">Ásia</a></li>
+              <li><a class="dropdown-item" href="#oceania">Oceania</a></li>
+            </ul>
+
+
+            
+          </li>
+        </ul>
+      </div>
+     
+      <div class="login">
+        <form class="form-floating mb-3">
+          <input class="form control" type="search" placeholder="Procurando algo?" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">&#x1F50D;</button>       
+         </form>
+        
+         <p>
+          <a class="nav-link" href="index.html" style="text-align: right; display: inline-block;" >Login</a> 
+          <span>
+            <a class="nav-link" href="FORMULARIO.html" style="text-align: right;display: inline-block;">Cadastre-se</a></div> 
+          </span>
+         </p>
+      </div>
+
+  
+      <!--
+      <div><a class="nav-link" href="index.html" style="color:white; text-align: right;">Login</a> <a class="nav-link" href="FORMULARIO.html" style="color:white; text-align: right;">Cadastre-se</a></div> 
+      -->
+
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-title">
+          <b> Para onde você quer viajar? </b>
+        </div>
+      </div>
+
+      <div class="row"> 
+        <div class="col-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Somente ida</label>
+        </div>
+        <div class="col-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Ida e volta</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <input class="form-control " type="text" placeholder="Origem" aria-label="Origem da Viagem">
+        </div>
+        <div class="col">
+          <input class="form-control " type="text" placeholder="Destino" aria-label="Destino da Viagem">
+        </div>
+        <div class="col">
+        <select class="form-select" aria-label="Class">
+          <option selected>Classe</option>
+          <option value="1">Classe econômica</option>
+          <option value="2">Classe executiva</option>
+          <option value="3">Primeira classe</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2">
+          Data de ida -->
+        </div>
+        <div class="col-4">
+          <input class="form-control " type="date" placeholder="Data de ida" aria-label="Data de Início Viagem">
+        </div>
+        <div class="col-2">
+          Data de ida -->
+        </div>
+      <div class="col-4">
+        <input class="form-control " type="date" placeholder="Data de volta" aria-label="Data final da Viagem">
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col">
+          Quantos passageiros?
+        </div>
+        <div class="col">
+          <select class="form-select" aria-label="Class">
+            <option selected>Adultos: 12+ anos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">Mais? Consulte nossas promoções exclusivas</option>
+          </select>
+        </div>
+        <div class="col">
+          <select class="form-select" aria-label="Class">
+            <option selected>Crianças: 2 a 11 anos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">Mais? Consulte nossas promoções exclusivas</option>
+          </select>
+        </div>
+        <div class="col">
+          <select class="form-select" aria-label="Class">
+            <option selected>Bebês: 0 a 1 ano</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">Mais? Consulte nossas promoções exclusivas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="btn btn-primary" style="font-size: 30px; background-color: blue; border-radius: 20%;">Partiu &#9992;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+   
+  <div id="brasil" class="config"><h2> &#127463;&#127479; <b> Viagens Nacionais </b></h2></div> 
+    
+    <br>
+    <main> 
+  <article>
+  <div><h3  >Brasil</h3></div>
+       <hr>
+       <section class="main"> 
+          
+            <div class="card card1">
+               <img src="https://www.essemundoenosso.com.br/wp-content/uploads/2019/09/Alter-do-Chao-Dicas-01-Destaque.jpg"  alt="Foto da margem do rio Tapajós">
+               <div class="card-body justify">
+                    
+                     <h5 class="card-title">Alter do Chão - Pará</h5>
+                     <p class="card-text">Nas margens do rio Tapajós e do Lago Verde, em Alter do Chão, existem diversas praias com águas perfeitas para dar aquele mergulho refrescante. E o caribe brasileiro fica abraçado pela floresta Amazônica </p>
+                     <a href="index.html" class="btn btn-primary but">Partiu</a>
+              </div>
+          </div>
+              
+          <div class="card card1">
+              <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/63184497.jpg?k=46c2c2d16ff36b6f67a2b70a35794502125cbf61dac98ec92638646e81cc4e26&o="  alt="Foto do litoral de Natal com o Morro do careca">
+              <div  class="card-body justify" >
+                
+                  <h5 class="card-title">Natal - Rio Grande do Norte</h5>
+                  <p class="card-text">É conhecida pelas extensas dunas de areia costeiras e pelo Forte dos Reis Magos, em forma de estrela, uma fortaleza portuguesa do século XVI na foz do rio Potengi. A norte do rio, Genipabu é uma área de enormes dunas com uma lagoa de água doce. </p>
+                  <a href="index.html" class="btn btn-primary but">Partiu</a>
+              </div>
+          </div>
+
+          <div class="card card1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Anderps_067.JPG"  alt="Foto de uma das praias de Jeri com uma formação rochosa">
+              <div class="card-body justify">
+                
+                  <h5 class="card-title">Jericoacoara - Ceará</h5>
+                  <p class="card-text">Escondida entre dunas, lagoas, mangue e o mar, Jeri era uma simples vila de pescadores, um local de difícil acesso e com praticamente nenhuma estrutura. Hoje a vila ainda é simples, mas é também mais moderna, com hotéis e pousadas , além de restaurantes e bares. </p>
+                  <a href="index.html" class="btn btn-primary but">Partiu</a>
+              </div>
+          </div>
+              
+          <div class="card card1">
+              <img src="https://osulmatogrossense.com.br/wp-content/uploads/2020/01/305BA7B4-56D2-4866-ABFC-9EB2789268B7.jpeg"  alt="Foto de um cachoeira de Bonito">
+              <div class="card-body justify">
+                
+                  <h5 class="card-title">Bonito - Mato Grosso do Sul</h5>
+                  <p class="card-text">É uma cidade e centro de ecoturismo no estado brasileiro de Mato Grosso do Sul. A área circundante é conhecida pelos rios de água translúcida, como o Rio da Prata, um destino de snorkeling repleto de peixes. </p>
+                  <a href="index.html" class="btn btn-primary but">Partiu</a>
+              </div>
+          </div>      
+          <div class="card card1">
+              <img src="https://www.essemundoenosso.com.br/wp-content/uploads/2020/12/quantos-dias-em-monte-verde-02.jpg"  alt="Foto da cidade Monte Verde ao entardecer ">
+              <div class="card-body justify">
+                
+                    <h5 class="card-title">Monte Verde - Minas Gerais</h5>
+                    <p class="card-text">O friozinho, que impera durante quase o ano todo, as paisagens da Serra da Mantiqueira e as hospedagens românticas fazem de Monte Verde a queridinha dos casais. Banheira de hidromassagem e lareira são itens quase obrigatórios nos quartos. </p>
+                    <a href="index.html" class="btn btn-primary but">Partiu</a>
+             </div>
+         </div>
+         <div class="card card1">
+          <img src="https://guiaviajarmelhor.com.br/wp-content/uploads/2016/10/areiaquecanta.jpg"  alt="Foto do ponto turistico Areia que Canta">
+          <div class="card-body justify">
+            
+                <h5 class="card-title">Brotas - São Paulo</h5>
+                <div class="card-text"> Alguns pontos para conhecer na região: <ul><li>A Areia que Canta, famosa nascente gigante de águas cristalinas</li> <li>O Sítio Cachoeira 3 Quedas é um dos atrativos mais procurados de Brotas, SP.</li> <li>Brotas Parque Jacaré, num dos mais deslumbrantes cenários de cânions e mata preservada da região.</li></ul></div>
+                <a href="index.html" class="btn btn-primary but">Partiu</a>
+         </div>
+     </div>
+     <div class="card card1">
+      <img src="https://dsdsuzy1jtjfw.cloudfront.net/wp-content/uploads/2020/09/shutterstock_1170230890-1200x675.jpg"  alt="Foto do Jardim de Petropólis">
+      <div class="card-body justify">
+        
+            <h5 class="card-title">Petropólis - Rio de Janeiro</h5>
+            <p class="card-text">Com os seus picos arborizados e quedas de água, é conhecida como um retiro de montanha para os residentes do Rio. No centro, o Museu Imperial exibe mobiliário de época no antigo palácio do imperador do século XIX, Dom Pedro II. </p>
+            <a href="index.html" class="btn btn-primary but">Partiu</a>
+     </div>
+ </div>
+                             
+          <div class="card card1">
+             <img src="https://topografica.com.br/wp-content/uploads/2018/10/topografica-Cachoeiras-PR-Cachoeira%CC%83o-Vale-do-Codo%CC%81-Jaguariai%CC%81va.jpg"  alt="Foto de uma das quedas de Jaguariaíva">
+             <div class="card-body justify">
+                 <h5 class="card-title">Jaguariaíva - Paraná</h5>
+                 <p class="card-text">Dentre os muitos atrativos culturais e históricos podemos destacar o Museu Conde Francesco Matarazzo, o Memorial Ferroviário, o Parque Dr Ruy Cunha, Santuário do Nosso Senhor Bom Jesus da Pedra Fria e a Casa da Cultura. Já dentre os atrativos naturais podemos destacar o Parque Linear do Rio Capivari e seu Cachoeirão, o Parque Municipal do Lago Azul com um complexo de três cachoeiras e cânion e o Parque Estadual do Cerrado com o monumental cânion Encanadão.</p>
+                 <a href="index.html" class="btn btn-primary but">Partiu</a>
+             </div>
+      </section> 
+<br>
+
+    <div id="américa"class="config">
+      <h2 > &#127758;<b> Viagens Internacionais </b> </h2>
+    
+    </div>
+    
+
+    <div > <h3 >América</h3></div>
+    <hr>
+    <section class="main">
+
+<div class="card card1" >
+    <img src="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/01/cancun-o-que-fazer-3.jpg"  alt="Foto do litoral de Cancun com resorts beira-mar">
+    <div class="card-body justify">
+      <h5 class="card-title">Cancun - México</h5>
+      <div class="card-text">É conhecida por suas praias, seus vários resorts e sua vida noturna. Ela é composta por duas áreas distintas: <ul> <li> a área mais tradicional do centro da cidade, El Centro</li> <li> e a Zona Hotelera, uma longa faixa à beira-mar com grandes hotéis, casas noturnas, lojas e restaurantes.</li> </ul></div>
+      <a href="index.html" class="btn btn-primary but">Partiu</a>
+        </div>
+    </div>
+
+    <div class="card card1" >
+        <img src="https://media.istockphoto.com/photos/orlando-picture-id1170201385?k=20&m=1170201385&s=612x612&w=0&h=s--OYBlXIa-7jeINo4f8nyXqRfy5hSGt3YSbNJHZhoc=" alt="Foto do lago Eola ">
+        <div class="card-body justify">
+          <h5 class="card-title">Orlando - EUA</h5>
+          <p class="card-text">Abriga mais de uma dezena de parques temáticos. O mais conhecido é o Walt Disney World, composto por parques como o Magic Kingdom e o Epcot, além de parques aquáticos. Outra atração importante é o Universal Orlando, com o Universal Studios e o Islands of Adventure.</p>
+          <a href="index.html" class="btn btn-primary but">Partiu</a>
+        </div>
+      </div>
+
+      <div class="card card1">
+        <img src="https://www.fredtour.com.br/wp-content/uploads/2016/07/5-razoes-visitar-costa-rica-04.jpg"  alt="Foto de uma cachoeira do Parque Rincón de la Vieja">
+        <div class="card-body justify">
+          <h5 class="card-title">Liberia - Costa Rica</h5>
+          <p class="card-text">É local de uma exposição que acontece todo o mês de julho, celebrando a anexação da Província de Guanacaste ocorrida em 20 de julho de 1824. Há também o Parque Nacional Rincón de la Vieja: que tem águas termais, potes de barro e inúmeras cachoeiras e rios que podem ser encontrados ao longo de muitos quilômetros nos caminhos do parque.</p>
+          <a href="index.html" class="btn btn-primary but">Partiu</a>
+        </div>
+      </div>
+    </section>
+    <div><h3 id="europa">Europa</h3></div>
+    <hr>
+    <section class="main">
+      
+      <div class="card card1">
+          <img src="https://dsdsuzy1jtjfw.cloudfront.net/wp-content/uploads/2018/11/shutterstock_376672978.jpg"  alt="Foto da cidade Florença">
+          <div class="card-body justify">
+            <h5 class="card-title">Florença - Itália</h5>
+            <p class="card-text">Abriga muitas obras de arte e arquitetura renascentistas. Um dos seus pontos turísticos mais emblemáticos é o Duomo, catedral com cúpula de telhas de terracota, projetada por Brunelleschi, e o campanário de Giotto.</p>
+            <a href="index.html" class="btn btn-primary but">Partiu</a>
+          </div>
+          </div>
+
+          <div class="card card1">
+              <img src="https://i2.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2020/01/roteiro-amsterdam.jpg?resize=740,480"  alt="Foto da cidade Amsterdam englobando um de seus canais">
+              <div class="card-body justify">
+                <h5 class="card-title">Amsterdam - Holanda</h5>
+                <p class="card-text"> Conhecida por seu patrimônio artístico, um elaborado sistema de canais e casas estreitas com telhados de duas águas, legados da era dourada do século XVII na cidade. O bairro de museus abriga o Museu Van Gogh, o Rijksmuseum, com obras de Rembrandt e Vermeer, e o Stedelijk, que privilegia a arte moderna.</p>
+                <a href="index.html" class="btn btn-primary but">Partiu</a>
+              </div>
+            </div>
+
+            <div class="card card1">
+              <img src="https://www.infoescola.com/wp-content/uploads/2018/09/atenas-719305414.jpg"  alt="Foto da cidade Atenas">
+              <div class="card-body justify">
+                <h5 class="card-title">Atenas - Grécia</h5>
+                <div class="card-text">Atenas é a nível mundial a sexta cidade mais visitada por turistas. Alguns dos principais pontos turísticos são: <ul> <li> Templo de Zeus Olímpico</li><li>Museu Arqueológico</li> <li>Estádio Olímpico de Atenas </div>
+                <div><a href="index.html" class="btn btn-primary but">Partiu</a></div>
+              </div>
+            </div>     
+        </section>
+        
+        <div><h3 id="africa" >África</h3></div>
+        <hr>
+        <section class="main"> 
+            
+            <div class="card card1">
+                <img src="https://www.bonvoyagetur.com.br/wp-content/uploads/2021/01/kasbah-ait-ben-haddou-marrocos-yfrica.jpg"  alt="Foto das antigas construções da cidade">
+                <div class="card-body justify">
+                  <h5 class="card-title">Marrocos</h5>
+                  <p class="card-text">O principal porto de cruzeiros de Marrocos é Casablanca e tem o melhor mercado desenvolvido para turistas. Marraquexe, no centro de Marrocos, é um destino turístico importante, mas é mais popular entre os turistas para excursões de um e dois dias que fornecem um sabor da cultura local.</p>
+                  <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+                </div>
+    
+            <div class="card card1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14h84cuPlplZaL70SLfYbOWPFoOaChnKR-ZyrLBVvF27KEXJuEnRyUlaCu5KXaT22LvY&usqp=CAU"  alt="Foto da esfinge">
+                <div class="card-body justify">
+                     <h5 class="card-title">Egito</h5>
+                     <p class="card-text"> Além das grandes pirâmides e antigos templos, o Egito tem uma grande variedade de praias situadas no Mediterrâneo e no Mar Vermelho. O Mar Vermelho tem águas calmas, recifes de corais coloridos, peixes raros e belas montanhas.</p>
+                     <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+            </div>
+    
+            <div class="card card1" >
+                <img src="https://www.bloglevitatur.com.br/wp-content/uploads/2019/07/10.jpg"  alt="Foto de um safari com dois elefantes proximos a um lago">
+                <div class="card-body justify">
+                    <h5 class="card-title">Serengeti - Tanzania</h5>
+                    <p class="card-text"> Conhecido por suas vastas áreas selvagens, como as planícies do Parque Nacional de Serengeti, uma das mecas do safári e habitada pelos cinco animais de grande porte mais difíceis de serem caçados.</p>
+                    <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+            </div>      
+        </section>
+        
+        <div><h3 id="asia" >Ásia</h3></div>
+        <hr>
+         <section class="main"> 
+            
+                <div class="card card1" >
+                <img src="https://conteudo.imguol.com.br/c/entretenimento/d2/2020/08/28/bali-1598618509026_v2_4x3.jpg"  alt="Foto do templo de Ulun Dani Bratan">
+                <div class="card-body justify">
+                    <h5 class="card-title">Bali - Indonésia</h5>
+                    <p class="card-text">É uma ilha da Indonésia conhecida por suas montanhas vulcânicas repletas de florestas, seus arrozais, suas praias e seus recifes de coral. A ilha abriga locais religiosos, como o templo Uluwatu, localizado na beira de um penhasco. Ao sul, a cidade litorânea de Kuta tem bares animados.</p>
+                    <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+            </div>
+            
+            <div class="card card1">
+                <img src="https://fashionistando.uai.com.br/wp-content/uploads/sites/11/2021/08/dubai.png"  alt="Foto do litoral de Dubai com a torre Burj Khalifa">
+                <div class="card-body justify">
+                    <h5 class="card-title">Dubai - Emirados Arábes</h5>
+                    <p class="card-text">Conhecida pelos shoppings de luxo, pela arquitetura ultramoderna e pela animada vida noturna. Burj Khalifa, uma torre de 830 metros de altura, domina a linha do horizonte repleta de arranha-céus.</p>
+                    <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+            </div>
+            
+            <div class="card card1">
+                <img src="https://exame.com/wp-content/uploads/2016/09/size_960_16_9_supertrees-singapura5.jpg?quality=70&strip=info"  alt="Foto da cidade ao entardecer">
+                <div class="card-body justify">
+                    <h5 class="card-title">Singapura - Cingapura</h5>
+                    <p class="card-text">Esta pequena cidade-estado é um estudo de fusões e contrastes, oferecendo diversas maravilhas a ser exploradas. Parques tranquilos cercam arranha-céus futurísticos e shoppings luxuosos. Com uma cena de comida de rua agitada e restaurantes renomados, há inúmeras maneiras de saborear as diversas influências da culinária regional. </p>
+                    <a href="index.html" class="btn btn-primary but">Partiu</a>
+                </div>
+             </div>      
+             </section> 
+             
+             <div><h3 id="oceania">Oceania</h3></div>
+             <hr>
+             <section class="main"> 
+                
+                  <div class="card card1">
+                     <img src="https://cdn.getyourguide.com/img/location/5ffeb41ba859e.jpeg/88.jpg"  alt="Foto do litoral de Sydney com a famosa Opera de Sydney">
+                     <div class="card-body justify">
+                           <h5 class="card-title">Sydney - Austrália</h5>
+                           <p class="card-text">Uma das maiores cidades da Austrália, especialmente conhecida pela Ópera de Sydney, que fica na orla e tem um design inspirado em velas de barco. O enorme Porto Darling e o porto de Circular Quay, de menores dimensões, são centros da vida à beira-mar. Nas proximidades, ficam a Ponte da Baía de Sydney, em forma de arco, e o Jardim Botânico Real</p>
+                           <a href="index.html" class="btn btn-primary but">Partiu</a>
+                    </div>
+                </div>
+                    
+                <div class="card card1">
+                    <img src="https://conexaoplaneta.com.br/wp-content/uploads/2021/06/auckland-nova-zelandia-melhor-cidade-viver-conexao-planeta.jpg"  alt="Foto da cidade de Auckland">
+                    <div class="card-body justify">
+                        <h5 class="card-title">Auckland - Nova Zelândia</h5>
+                        <p class="card-text">No centro da cidade, na Queen Street, a emblemática Sky Tower tem vista para o Porto Viaduct, repleto de iates e contornado por bares e cafés. O Auckland Domain, parque mais antigo da cidade, fica próximo a um vulcão extinto e abriga os Wintergardens. </p>
+                        <a href="index.html" class="btn btn-primary but">Partiu</a>
+                    </div>
+                </div>
+                    
+                <div class="card card1">
+                    <img src="https://www.vounajanela.com/wp-content/uploads/2018/06/Bangkok-tailandia-1050x599.jpg"  alt="Foto da cidade de Bangkok">
+                    <div class="card-body justify">
+                        <h5 class="card-title">Bangkok - Tailândia</h5>
+                        <p class="card-text">Uma grande cidade conhecida pelos santuários ornamentados e pela animada vida urbana. O rio Chao Phraya, repleto de barcos, abastece a rede de canais, passando pelo distrito real de Rattanakosin, onde fica o opulento Grande Palácio e seu sagrado templo Wat Phra Kaew. Nas proximidades, fica o templo Wat Pho, que conta com um enorme Buda reclinado</p>
+                        <a href="index.html" class="btn btn-primary but">Partiu</a>
+                    </div>
+                </div>      
+            </section> 
+           
+       
+ </article>
+
+
+ 
+
+  <footer>
+
+    <div class="backtop">
+      <a href="#topo" class="float-start">
+        <span class="seta_cima"> &#11014;</span>
+        <br>
+        <div style="font-family: calibri;"class="backtop_escrito">
+           Voltar ao topo
+        </div>
+      </a>
+    </div>
+
+    <div class="final">
+        Let's Fly Viagens &copy; <br> <sup>O melhor jeito de explorar o mundo</sup>
+        <br>
+
+        Quer tirar alguma dúvida? Entre em contato conosco!
+        <br>
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa email">&#9993;</a>
+
+        <br><br>
+      </div>
+
+
+      <div class="final_direita">
+        Let's Fly Operadora de Viagens S.A. <br> CNPJ: X.XXX.XXX/XXXX-XX <br>
+        Rua dos bobos, N° 0 | Rio Branco-AC <br> CEP: XXXXX-XXX
+      </div>
+
+
+
+      <!-- tyle="text-align: right; font-size: 12px; color: white; padding-right: 10px;" -->
+
+  </footer>
+</body>
+</html>
