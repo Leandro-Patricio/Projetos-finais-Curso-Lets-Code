@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css.css" />
+    <script src="./calculos.js"></script>
+
+    <title>Calculadora LFP</title>
+    
+</head>
+<body>
+
+    <main>
+        <p class="titulo">
+          <b>Calculadora LFP</b> 
+        </p>
+        <p class="visor">
+            <textarea class="display" name="display" id="display" type="text" readonly="true" placeholder=0 ></textarea>
+            <div>
+            <input class="expressaoMatematica" name="expressaoMatematica" id="expressaoMatematica" type="text" readonly="true">
+            <span><input type="button" class="btn_expressaoMatematica" value="Expressão interna" onclick=openCloseExpressaoMatematica()></span> 
+        </div>
+        </p>
+
+        <form name="operadores" id="operadores">
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="Resto" id="botao_calc"  OnClick="dis('%')"></input>
+                <input type="button" class="botao_calc" value="&#8730;" OnClick="dis('**(1/2)')"></input>
+                <input type="button" class="botao_calc" value="Clear" onclick= limpa() ></input>
+                <input type="button" class="botao_calc" value="⌫" onclick= backspace() ></input>
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="Sen" id="botao_calc" OnClick="trigonometria('Sen')"></input>
+                <input type="button" class="botao_calc" value="Cos" id="botao_calc" OnClick="trigonometria('Cos')"></input>
+                <input type="button" class="botao_calc botao_historico" value="Hist" OnClick=openCloseHistorico()  ></input>
+                <input type="button" class="botao_calc botao_historico" value="C. Hist" OnClick=limpaHistorico()></input>             
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="(" OnClick="dis('(')"></input>
+                <input type="button" class="botao_calc" value=")" OnClick="dis(')')"></input>
+                <input type="button" class="botao_calc" value="x&#x207F;" OnClick="dis('**')"></input>
+                <input type="button" class="botao_calc" value="/" OnClick="dis('/')"></input>
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="7" OnClick="dis('7')"></input>
+                <input type="button" class="botao_calc" value="8" OnClick="dis('8')"></input>
+                <input type="button" class="botao_calc" value="9" OnClick="dis('9')"></input>
+                <input type="button" class="botao_calc" value="*" OnClick="dis('*')"></input>
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="4" OnClick="dis('4')"></input>
+                <input type="button" class="botao_calc" value="5" OnClick="dis('5')"></input>
+                <input type="button" class="botao_calc" value="6" OnClick="dis('6')"></input>
+                <input type="button" class="botao_calc" value="-" OnClick="dis('-')"></input>
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="1" name="1" id="1" onclick= dis(1)></input>
+                <input type="button" class="botao_calc" value="2" OnClick="dis('2')"></input>
+                <input type="button" class="botao_calc" value="3" OnClick="dis('3')"></input>
+                <input type="button" class="botao_calc" value="+" onclick= "dis('+')"></input>
+            </div>
+            <div class="flex_container">
+                <input type="button" class="botao_calc" value="𝛑" OnClick=pi()></input>
+                <input type="button" class="botao_calc" value="0" OnClick="dis('0')"></input>
+                <input type="button" class="botao_calc" value="," OnClick="dis('.')"></input>
+                <input type="button" class="botao_calc" value="=" OnClick=resolver()></input>
+            </div>
+        </form>
+
+        <p>
+        <aside>
+            <p class="historico" id="historico"> <b>Histórico</b> 
+                <textarea class="historicoAntigo" name="historicoAntigo" id="historicoAntigo" readonly="true" placeholder="Histórico" rows="30">
+                </textarea>
+            </p>
+        </aside>
+        </p>
+
+
+    </main>
+    
+    
+</body>
+</html>

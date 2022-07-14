@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+}
+
+main {
+    background-color:rgb(122, 122, 122);
+    margin: 10% 30%;
+    text-align: center;
+}
+
+.expressaoMatematica{
+    background-color: black;
+    color: white;
+    display: none;
+    width: 90%;
+}
+
+.btn_expressaoMatematica{
+    background-color: black;
+    color: white;
+}
+
+.titulo{
+    padding-top: 10px;
+    font-size: 30px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.display{
+    background-color: rgb(224, 224, 224);
+    font-size: 20px;
+    height: 45px;
+    text-align:left;
+    padding: 7px 4px;
+    word-wrap: break-word;
+    width: 90%;
+    resize:none;
+    
+}
+
+.flex_container{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.botao_calc{
+    padding: 5px;
+    font-size: 20px;
+    border: outset;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+}
+
+.botao_calc:active{
+    border: inset;
+    box-shadow: inset 0px 0px 5px #2bff00;
+}
+
+p.historico{
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #570048;
+    color: white;
+}
+
+.historicoAntigo{
+    width: 99%;
+    border:0.5px black solid;
+    padding: 0px;
+    /* display: block; */
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
+
+.botao_historico{
+    background-color: rgb(173, 173, 173);
+    font-size: 15px;
+}
