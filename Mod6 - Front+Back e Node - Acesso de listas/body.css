@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    background-image: url(https://us.123rf.com/450wm/urfingus/urfingus1503/urfingus150300052/37239720-teatro-escenario-con-tel%C3%B3n-rojo-aislado-en-blanco-.jpg?ver=6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: 130% 100%;
+    color: black;
+}
+
+table {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 1vw;
+}
+
+.btnPostPutDel {
+    margin: 1vw 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.naoGET {
+    padding: 1vw 5.6vw;
+    font-size: 20px;
+}
+
+.inputs {
+    width: 62vw;
+}
+
+.listaDeFilmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    background-color: rgb(228, 228, 228, 0.7);
+}
+
+.tituloNoCartaz {
+    font-size: 25px;
+}
+
+.infoNoCartaz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: start;
+    font-size: 15px;
+    margin: 0.5vw 1vw;
+}
+
+.conteinerBtnsGET {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnGET {
+    width: 28%;
+    font-size: 15px;
+}
+
+.cartazes {
+    margin-top: 1vw;
+}
+
+.btnSelect {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}

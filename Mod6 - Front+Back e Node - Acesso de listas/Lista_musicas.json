@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "titulo": "The Dark Side of the Moon",
+        "genero": "Art rock, Rock progressivo, Rock psicodélico",
+        "ano": "1973",
+        "diretor_autor": "Pink Floyd",
+        "poster_capa": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3b/Dark_Side_of_the_Moon.png/220px-Dark_Side_of_the_Moon.png"
+    },
+    {
+        "id": 2,
+        "titulo": "Discovery",
+        "genero": "House",
+        "ano": "2001",
+        "diretor_autor": "Daft Punk",
+        "poster_capa": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/28/Daft_Punk_Discovery.jpg/220px-Daft_Punk_Discovery.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Quebra-Cabeça",
+        "genero": "Rap, Rap rock, Rock",
+        "ano": "1997",
+        "diretor_autor": "Gabriel o Pensador",
+        "poster_capa": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/41/Quebra-Cabe%C3%A7a_CD.jpg/220px-Quebra-Cabe%C3%A7a_CD.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Krig-ha, Bandolo!",
+        "genero": "Rock n'roll, Rockabilly, Folk rock, Country rock, Baião",
+        "ano": "1973",
+        "diretor_autor": "Raul Seixas",
+        "poster_capa": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/75/KrigHaBandolo.jpg/220px-KrigHaBandolo.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Meteora",
+        "genero": "Nu metal, Rap metal, Rock alternativo, Rap rock, Metal alternativo",
+        "ano": "2003",
+        "diretor_autor": "Linkn Park",
+        "poster_capa": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/83/Linkin_park-meteora_a.jpg/220px-Linkin_park-meteora_a.jpg"
+    }
+]

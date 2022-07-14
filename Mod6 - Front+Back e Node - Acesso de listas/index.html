@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Principal 2 - LFP</title>
+    <link rel="stylesheet" href="body.css" type="text/css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <script>
+
+
+        const getInputData = (qualGET) => {
+            const urlHTML = checarURL(qualGET)
+
+            axios({
+                method: "get",
+                baseURL: "http://localhost:3000",
+                url: urlHTML,
+            })
+                .then(res => {
+                    console.log(res)
+
+                    let div = document.createElement('div')
+                    document.getElementById("listaDeFilmes").innerHTML = ""
+
+                    for (let index = 0; index < res.data.length; index++) {
+                        const { id, poster_capa, genero, titulo, ano, diretor_autor } = res.data[index]
+
+                        div.innerHTML += `<div class="cartazes"> <span class="tituloNoCartaz">${id}. ${titulo}</span><br/>
+                <img src=${poster_capa} alt=imagem ${titulo} width="200vw" height="300vw" /><br/>
+                <ul class="infoNoCartaz">
+                    <li>Gênero: ${genero}</li>
+                    <li>Ano: ${ano}</li>
+                    <li>Diretor/Autor: ${diretor_autor}</li>
+                </ul>
+                </div>
+                `
+                        document.getElementById("listaDeFilmes").appendChild(div)
+                        div = document.createElement('div')
+                    }
+                })
+        }
+
+
+        const limparInputs = () => {
+            document.getElementById('titulo').value = ""
+            document.getElementById('genero').value = ""
+            document.getElementById('ano').value = ""
+            document.getElementById('diretor_autor').value = ""
+            document.getElementById('poster_capa').value = ""
+            document.getElementById('id').value = ""
+        }
+
+        const checarURL = (qualURL) => {
+            switch (qualURL) {
+                case 1:
+                    return ("/filmes")
+                    break;
+                case 2:
+                    return ("/series")
+                    break;
+                case 3:
+                    return ("/musicas")
+            }
+        }
+
+        const postInputData = () => {
+
+
+            const inputList = document.getElementsByName('inputs')
+            const obj = {}
+            inputList.forEach(el => {
+                const { id, value } = el
+                obj[id] = value || ""
+            })
+
+            //limpando inputs
+            limparInputs()
+
+            //adquirindo url
+            const urlHTML = document.getElementById('selectTipoDeArte').value
+            console.log(urlHTML)
+
+            // post request
+            axios({
+                method: "post",
+                baseURL: "http://localhost:3000",
+                url: urlHTML,
+                data: JSON.stringify(obj)
+            })
+
+
+        }
+
+        const putIntoData = () => {
+            // getting form data from DOM
+            const inputList = document.getElementsByName('inputs')
+            const obj = {}
+            inputList.forEach(el => {
+                const { id, value } = el
+                obj[id] = value || ""
+            })
+
+            //limpando inputs
+            limparInputs()
+
+            //adquirindo url
+            const urlHTML = document.getElementById('selectTipoDeArte').value
+            console.log(urlHTML)
+
+            // post request
+            axios({
+                method: "put",
+                baseURL: "http://localhost:3000",
+                url: urlHTML,
+                data: JSON.stringify(obj),
+
+            })
+
+
+        }
+        const deleteData = () => {
+            const id = document.getElementById('id').value
+            const urlHTML = document.getElementById('selectTipoDeArte').value
+
+            limparInputs()
+
+            axios({
+                method: "delete",
+                baseURL: "http://localhost:3000",
+                url: urlHTML,
+                data: JSON.stringify(id)
+            })
+        }
+
+
+    </script>
+</head>
+
+
+<html>
+
+<body>
+    <h1 style="margin-top: 15vw;">Atividade Principal 2</h1>
+    <h2>Alterando informações em um JSON</h2>
+    <h3>Grupo:</h3>
+    <h4>
+        Julia Téo e Leandro Patrício
+    </h4>
+
+    <div>
+        Vamos fazer uma pequena API com informações de filmes, séries e músicas.
+        <br /> Foram escolhidas algumas informações para
+        serem preenchidas. Não há necessidade de usar todas.
+        <br />Cada título será criado com um ID, o qual será necessário para alterar/deletar suas informações.
+        <p> <b>Divirta-se</b> </p>
+    </div>
+
+    <div class="conteinerBtnsGET">
+        <button onclick="getInputData(1)" class="btnGET">
+            <!-- <button onclick="getInputData()"> -->
+            Clique aqui para mostrar os <u><b>filmes</b></u>
+            <br /> Ou seja, usar o GET para filmes
+        </button>
+
+        <button onclick="getInputData(2)" class="btnGET">
+            <!-- <button onclick="getInputData()"> -->
+            Clique aqui para mostrar as <u><b>séries</b></u>
+            <br /> Ou seja, usar o GET para as séries
+        </button>
+
+        <button onclick="getInputData(3)" class="btnGET">
+            <!-- <button onclick="getInputData()"> -->
+            Clique aqui para mostrar as <u><b>músicas</b></u>
+            <br /> Ou seja, usar o GET para as músicas
+        </button>
+    </div>
+    <p class="listaDeFilmes" id="listaDeFilmes"></p>
+
+    <p style="font-size:large;">
+        A partir daqui, você terá a opção de adicionar (POST), alterar (PUT) ou deletar (DELETE) algum
+        filme e/ou informação.
+    </p>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <select id="selectTipoDeArte" class="btnSelect" name="inputs">
+                        <option disabled>Escolha uma opção</option>
+                        <option value="/filmes">Filme</option>
+                        <option value="/series">Série</option>
+                        <option value="/musicas">Música</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                Informações de filmes, séries ou livros
+            </tr>
+            <tr>
+                <th>Título:</th>
+                <th><input type="text" id="titulo" class="inputs" placeholder="Título da obra" name="inputs"></th>
+            </tr>
+            <tr>
+                <th>Gênero:</th>
+                <th><input type="text" id="genero" class="inputs" placeholder="Gênero da obra" name="inputs"></th>
+            </tr>
+            <tr>
+                <th>Ano:</th>
+                <th><input type="text" id="ano" class="inputs" placeholder="Ano de estreia/publicação" name="inputs">
+                </th>
+            </tr>
+            <tr>
+                <th>Diretor/Autor:</th>
+                <th><input type="text" id="diretor_autor" class="inputs" placeholder="Diretor/Autor(es) da obra"
+                        name="inputs">
+                </th>
+            </tr>
+            <tr>
+                <th>Pôster/Capa:</th>
+                <th><input type="text" id="poster_capa" class="inputs" placeholder="Diretor/Autor(es) da obra"
+                    name="inputs">
+            </th>
+
+            </tr>
+            <tr>
+                <th>ID:</th>
+                <th><input type="text" id="id" class="inputs" name="inputs"
+                        placeholder="Somente passe este o ID caso vá alterar ou deletar alguma informação. Se for adicionar uma obra, o ID será gerado automaticamente">
+                </th>
+            </tr>
+
+        </table>
+    </form>
+
+    <p class="btnPostPutDel">
+        <button class="naoGET" onclick="postInputData()"> Adicionar <br />(POST)</button>
+        <button class="naoGET" onclick="putIntoData()"> Modificar <br />(PUT)</button>
+        <button class="naoGET" onclick="deleteData()"> Deletar <br />(DELETE)</button>
+    </p>
+
+
+</body>
+
+</html>
