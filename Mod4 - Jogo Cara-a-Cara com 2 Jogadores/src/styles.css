@@ -1,0 +1,215 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  border: 1px solid;
+  background-color: rgb(173, 124, 218);
+  margin-bottom: 10px;
+}
+
+.imgHero:hover {
+  transform: scale(1.5);
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.imgHero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  margin: 2px 2px;
+}
+
+.nomeHeroi {
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 130px;
+}
+
+.confirmacaoInicial {
+  padding: 10px;
+  margin: 0 0 10px 10px;
+}
+
+.tabuleiro {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  background-color: coral;
+  margin: 0px 100px;
+}
+
+.tabuleiro2 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  background-color: rgb(13, 0, 255);
+  margin: 0px 100px;
+}
+
+.recomecoAQlqMomento {
+  width: 100%;
+  border: 5px outset;
+}
+
+.proximoJogador {
+  width: 100%;
+  background-color: rgb(173, 124, 218);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.proximoJogador:hover{
+  cursor: alias;
+}
+
+.regras {
+  text-align: center;
+  margin: 0px 50px;
+}
+
+.pRegras {
+  text-align: justify;
+}
+
+.personagemEscolhido {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin: 10px 350px;
+  background-color: coral;
+}
+
+.personagemEscolhido2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin: 10px 350px;
+  background-color: rgb(13, 0, 255);
+}
+
+.listaCaracteristicasEscolhidasJogador1 {
+  list-style: ✅;
+}
+
+.caracteristicasEscolhidasJogadorAcerto {
+  background-color: rgb(0, 215, 0);
+  display: inline;
+  margin-left: 5px;
+  padding: 2px 2px;
+  /*  list-style-type:✅;*/
+}
+
+.caracteristicasEscolhidasJogadorErro {
+  background-color: red;
+  display: inline;
+  margin-left: 5px;
+  padding: 2px 2px;
+  /*  list-style-type:❌;*/
+}
+
+.telaJogador1 {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.telaJogador2 {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.divChute {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.linhaNoMeio {
+  text-decoration-line: line-through;
+}
+
+.proximo {
+  width: 100%;
+  border: 5px outset;
+}
+
+.chuteFinal {
+  display: flex;
+  justify-content: center;
+}
+
+.botoesChuteFinal {
+  padding: 20px;
+}
+
+.imgHeroChute {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+}
+
+.nomeHeroiChute {
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 80%;
+}
+
+.chuteErro2Img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msgChuteErro {
+  font-size: 25px;
+}
+.caracteristicaNoTabuleiro{
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(196, 196, 196);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.6s;
+  font-size:10px;
+}
+
+.caracteristicaNoTabuleiro::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(159, 159, 159) transparent transparent transparent;
+}
+
+.imgHero:hover .caracteristicaNoTabuleiro {
+  visibility: visible;
+  opacity: 1;
+}
